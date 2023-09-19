@@ -5,8 +5,20 @@ using namespace std;
 int main()
 {
     int n n_for_digit;
-    int b, result;
-    int digit = 0;
+    char b;
+    char *result;
+    int digit = 0; //자릿수
+
+    int processed_b = int(*b)
+
+    if(processed_b >= 65)
+    {
+        processed_b = b - 55;
+    }
+    else
+    {
+        processed_b = b - 48;
+    }
 
     cin >> n >> b;
 
@@ -20,7 +32,8 @@ int main()
 
     while()
     {
-        result = 
+        result = n / processed_b;
+
     }
 
 
