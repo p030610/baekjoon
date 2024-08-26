@@ -6,13 +6,13 @@ def quick_sort_x(dict):
     pivot_y = dict[len(dict) // 2]["y"]
     lesser_dict, equal_dict, greater_dict = [], [], []
     for num in dict:
-        if int(num["x"]) < int(pivot_x):
+        if int(num["y"]) < int(pivot_y):
             lesser_dict.append(num)
-        elif num["x"] > pivot_x:
+        elif num["y"] > pivot_y:
             greater_dict.append(num)
-        elif num["x"] == pivot_x and num["y"] < pivot_y :
+        elif num["y"] == pivot_y and num["x"] < pivot_x :
             lesser_dict.append(num)
-        elif num["x"] == pivot_x and num["y"] > pivot_y :
+        elif num["y"] == pivot_y and num["x"] > pivot_x :
             greater_dict.append(num)
         else:
             equal_dict.append(num)
