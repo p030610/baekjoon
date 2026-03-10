@@ -9,11 +9,12 @@ ll ans;
 ll n;
 
 int main(){
+    m.reserve(1000);
     scanf("%lld",&n);
 //    m[1]={n,n};
     ll prev=n;
     
-    for(int i=1; i<=min(n,(ll)100000); i++){
+    for(int i=1; i<=min(n,(ll)10000); i++){
         ll val=1;
         ll l=1;
         ll r=n;
