@@ -4,12 +4,12 @@
 using namespace std;
 typedef long long ll;
 
-unordered_map<ll, pair<ll,ll>> m;
+map<ll, pair<ll,ll>> m;
 ll ans;
 ll n;
 
 int main(){
-    m.reserve(1000);
+//    m.reserve(1000);
     scanf("%lld",&n);
 //    m[1]={n,n};
     ll prev=n;
